@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "partition": "inha_songdo_vtol",
+  "samples": 15,
+  "mean_camera_offset_body_m": [
+    -7.999797774176183,
+    4.6198566514507935e-06,
+    1.000001647097916
+  ],
+  "expected_offset_body_m": [
+    -8,
+    0,
+    1
+  ],
+  "aircraft_heading_rad": 2.9672615438143017e-07
+}

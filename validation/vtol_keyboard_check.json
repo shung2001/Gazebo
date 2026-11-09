@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Up key publishes forward command",
+    "Up key moves the physical aircraft",
+    "Key release clears forward command",
+    "Left key publishes lateral command",
+    "Minimizing clears held keys",
+    "Shift+Up raises the altitude target"
+  ],
+  "errors": []
+}

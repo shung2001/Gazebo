@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/PX4/PX4-gazebo-models",
+  "commit": "e5997f455e33ec071c7c677fc59a65781de496a4",
+  "license_file": "LICENSE",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "5fcb2a52fc0390cc8c7eccaa0cde9316c810f38811efb357e1ede7858e26e289",
+      "bytes": 1532
+    },
+    {
+      "path": "models/standard_vtol/meshes/iris_prop_ccw.dae",
+      "sha256": "5f8b01668ee24a5b663ca8c4dd56e294fd6480db7eec1e5a7c11e45ba9004e99",
+      "bytes": 308284
+    },
+    {
+      "path": "models/standard_vtol/meshes/iris_prop_cw.dae",
+      "sha256": "6cbc686772dccd46253fb65ece000e7ffa6a74b9c097bda349884bd1e78cd879",
+      "bytes": 354209
+    },
+    {
+      "path": "models/standard_vtol/meshes/x8_elevon_left.dae",
+      "sha256": "2224bbea750fa0e89389146829ef520ca0d361910f7ff10c1834d36e9f15dcde",
+      "bytes": 32101
+    },
+    {
+      "path": "models/standard_vtol/meshes/x8_elevon_right.dae",
+      "sha256": "9934196e8594021127a7e198be8eb59144fa675645f7c72747800157acecd8ff",
+      "bytes": 32491
+    },
+    {
+      "path": "models/standard_vtol/meshes/x8_wing.dae",
+      "sha256": "d6a3b05cca7ba958d8399f27443499d8bda0c0085c7e6e9f912fd77691da1a8e",
+      "bytes": 1846957
+    },
+    {
+      "path": "models/standard_vtol/model.config",
+      "sha256": "980a4179f3b8ac6f7fe472e7e2bf65b202730a3f607040541ef304e50513452b",
+      "bytes": 299
+    },
+    {
+      "path": "models/standard_vtol/model.sdf",
+      "sha256": "a7ea7310741262f3b9a0ad13100279d910b18072ff663f570e634af03d6ed24c",
+      "bytes": 26051
+    }
+  ]
+}

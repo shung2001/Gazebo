@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "measurements": {
+    "takeoff_z_m": 4.996157479040916,
+    "hover_xy_drift_2s_m": 0.04120266544897029,
+    "forward_displacement_m": 3.557176293439369,
+    "backward_displacement_m": -3.752801756158121,
+    "left_displacement_m": 3.739405305449935,
+    "right_displacement_m": -3.728979938321345,
+    "positive_yaw_change_rad": 0.7024920655935846,
+    "negative_yaw_change_rad": -0.6797162307718223,
+    "climb_m": 3.1465369256654787,
+    "expired_input_x_command": 0,
+    "landed_z_m": 0.16361714238507433
+  },
+  "partition": "inha_vtol_acceptance_1635",
+  "wall_seconds": 80.63703507599985
+}

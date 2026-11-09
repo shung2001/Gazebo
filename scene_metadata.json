@@ -1,0 +1,68 @@
+{
+  "source": "QGIS/Scene.obj",
+  "source_sha256": "8e5448b080587714f427537c2f895b239791cee649124e8a998e52572ebaec9d",
+  "source_encoding": "cp949",
+  "vertices": 37950,
+  "normals": 37950,
+  "triangles": 12650,
+  "source_bounds": {
+    "min": [
+      -0.493257,
+      -0.5,
+      -0.0414307
+    ],
+    "max": [
+      0.493257,
+      0.5,
+      0.0414307
+    ]
+  },
+  "uniform_scale_m_per_obj_unit": 2932.619623513543,
+  "scale_recovery": "Reference SHP northing span / OBJ Y span; X agreement checked",
+  "horizontal_match_sample_max_error_m": 0.02604022631173907,
+  "horizontal_match_sample_mean_error_m": 0.011799118176056889,
+  "horizontal_crs": "EPSG:5186",
+  "origin_easting_northing_m": [
+    169587.88922406785,
+    531717.9239256042
+  ],
+  "axes": [
+    "east",
+    "north",
+    "up"
+  ],
+  "ground_z_m": 0,
+  "height_datum": "Relative to source mesh minimum Z; not surveyed elevation",
+  "size_m": [
+    2893.0703152708393,
+    2932.619623513543,
+    243.0009676718051
+  ],
+  "local_bounds": {
+    "min": [
+      -1392.3598095195484,
+      -1432.3953276176471,
+      0.0
+    ],
+    "max": [
+      1500.7105057513108,
+      1500.2242958957795,
+      243.0009676718051
+    ]
+  },
+  "objects": [
+    {
+      "name": "campus_0",
+      "highlighted": true
+    },
+    {
+      "name": "surroundings_1",
+      "highlighted": false
+    }
+  ],
+  "building_collisions": true,
+  "building_collision_cells": 1529,
+  "collision_roof_triangles": 3530,
+  "collision_method": "convex roof-footprint prisms",
+  "textures": false
+}
