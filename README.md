@@ -11,6 +11,11 @@ Ubuntu 22.04 WSL 터미널에서 실행한다. 이미 같은 VTOL 조종 세션�
 ```bash
 cd /mnt/c/Users/choih/Desktop/개인_대회/we_meet
 bash Gazebo/run_vtol.sh
+
+or 
+
+cd /mnt/c/Users/choih/Desktop/개인_대회/we_meet -> 이 경로는 각자 알아서 환경에 맞게 설정해야함.
+bash Gazebo/run_vtol.sh
 ```
 
 캠퍼스와 VTOL, `VTOL Keyboard Controller` 창이 열린다. 기체는 자동으로 8m 목표 고도까지 이륙한다. 카메라는 기체 좌표계에서 뒤쪽 8m·좌우 0m·위쪽 1m를 따라가므로 기수가 돌아가도 후면 시점을 유지한다. 건물 충돌은 기본 활성화다. 시작 위치는 벽에서 약 14m 떨어진 `(-110,-90,0.6)m`다.
@@ -21,6 +26,10 @@ PowerShell에서 직접 실행할 수도 있다.
 
 ```powershell
 wsl -d Ubuntu-22.04 -- bash /mnt/c/Users/choih/Desktop/개인_대회/we_meet/Gazebo/run_vtol.sh
+
+or 
+
+wsl -d Ubuntu-22.04 -- bash /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/run_vtol.sh
 ```
 
 ## 생성 파일

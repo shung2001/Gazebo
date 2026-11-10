@@ -279,7 +279,7 @@ illum 2
 <sdf version="1.9">
   <world name="inha_songdo">
     <physics name="default_physics" type="ignored">
-      <max_step_size>0.001</max_step_size>
+      <max_step_size>0.002</max_step_size>
       <real_time_factor>1</real_time_factor>
     </physics>
     <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
@@ -335,6 +335,12 @@ illum 2
       </link>
     </model>
     <include><uri>model://inha_songdo_scene</uri></include>
+    <!-- 2 x 2 m target on the campus facade, facing the VTOL spawn area. -->
+    <include>
+      <uri>model://wall_target</uri>
+      <name>campus_wall_target</name>
+      <pose>-65.380811 -5.656304 8 1.570796327 0 -0.658892054</pose>
+    </include>
   </world>
 </sdf>
 ''')

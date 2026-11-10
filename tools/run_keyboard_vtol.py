@@ -2,6 +2,7 @@
 from pathlib import Path
 import fcntl
 import os
+import shutil
 import signal
 import subprocess
 import sys
@@ -15,6 +16,10 @@ def main():
         raise SystemExit('Run this launcher inside Ubuntu WSL, not Windows Python.')
     os.environ.setdefault('GZ_PARTITION', 'inha_songdo_vtol')
     os.environ.setdefault('QT_QPA_PLATFORM', 'xcb')
+    if 'MESA_D3D12_DEFAULT_ADAPTER_NAME' not in os.environ and shutil.which('nvidia-smi'):
+        gpu = subprocess.run(['nvidia-smi', '-L'], capture_output=True, text=True, check=False)
+        if gpu.returncode == 0 and 'NVIDIA' in gpu.stdout:
+            os.environ['MESA_D3D12_DEFAULT_ADAPTER_NAME'] = 'NVIDIA'
     paths = [str(ROOT / 'models'), str(ROOT / 'vendor' / 'px4-gazebo-models' / 'models')]
     if os.environ.get('GZ_SIM_RESOURCE_PATH'):
         paths.append(os.environ['GZ_SIM_RESOURCE_PATH'])
