@@ -1,0 +1,6 @@
+normalization1 = normalization([0, 0, 0], [255, 255, 255])
+model_optimization_flavor(optimization_level=2)
+post_quantization_optimization(finetune, policy=disabled)
+change_output_activation(conv80, sigmoid)
+change_output_activation(conv99, sigmoid)
+change_output_activation(conv117, sigmoid)

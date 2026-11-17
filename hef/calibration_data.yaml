@@ -1,0 +1,6 @@
+path: /mnt/c/Users/c/Desktop/대학생활/we_meet
+train: train/images
+val: train/images
+test: test/images
+names:
+  0: target board

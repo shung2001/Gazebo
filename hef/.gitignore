@@ -1,0 +1,8 @@
+# Local conversion inputs, intermediate artifacts, and downloaded SDK files.
+*.pt
+*.onnx
+*.har
+*.whl
+*.log
+*.tar.xz
+image.png
