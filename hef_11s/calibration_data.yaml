@@ -1,0 +1,5 @@
+path: /mnt/c/Users/c/Desktop/대학생활/we_meet/dataset_11s_seg
+train: train/images
+val: /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/hef_11s/calibration_images.txt
+names:
+  0: target board

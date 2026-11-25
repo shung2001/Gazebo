@@ -1,0 +1,28 @@
+description: Ultralytics YOLO11s-seg model trained on C:\Users\c\Desktop\대학생활\we_meet\dataset_11s_seg\data.yaml
+author: Ultralytics
+date: "2026-11-25T00:30:47.169851+09:00"
+version: "8.4.208"
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: segment
+head: Segment
+batch: 1
+imgsz:
+- 1280
+- 1280
+names:
+  0: target board
+args:
+  data: /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/hef_11s/calibration_data.yaml
+  name: hailo8
+  fraction: 1.0
+  conf: null
+  iou: 0.5
+  quantize: 8
+  simplify: true
+channels: 3
+end2end: false
+hailo_arch: hailo8
+nms: false
+semantic_baked: false

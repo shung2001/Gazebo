@@ -1,0 +1,6 @@
+*.onnx
+*.har
+*.log
+*.hef.tmp
+*.pt
+logs/

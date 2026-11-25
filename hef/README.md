@@ -1,5 +1,7 @@
 # YOLO11m 표적 모델의 Hailo-8 HEF 변환
 
+1280×1280 입력의 YOLO11s 분할 체크포인트 `hef_11s/best_11s.pt` 변환 절차와 실행 기록은 [별도 가이드](../hef_11s/README.md)에 있다. 기존 YOLO11m 512px 산출물과 분리해 관리한다.
+
 ## 현재 상태
 
 - `YOLO11m_best.pt`: 원본과 동일한 체크포인트. YOLO11 인스턴스 분할, `target board` 1개 클래스, 입력 512×512.
