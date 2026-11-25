@@ -1,0 +1,27 @@
+{
+  "px4": {
+    "tag": "v1.17.0",
+    "commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+    "gazebo_submodule": "b6127f4ec20de867e215fb5f78ae88b80f371909",
+    "build_status": "NOT TESTED"
+  },
+  "mavros": {
+    "reviewed_ros2_source_commit": "2d3f4db1101c7950c8817a9d788f0d11106fb261",
+    "installed_binary_version": "TBD",
+    "runtime_status": "NOT TESTED"
+  },
+  "gazebo": "Harmonic / Ubuntu 22.04; runtime NOT TESTED",
+  "ros": "Humble; runtime NOT TESTED",
+  "yolo11m": {
+    "provided": false,
+    "path": "TBD",
+    "status": "BLOCKED"
+  },
+  "hailo": {
+    "target": "HAILO8",
+    "model_zoo": "verify v2.x",
+    "dfc": "verify v3.x",
+    "hailort": "TBD",
+    "hef": "NOT PROVIDED"
+  }
+}

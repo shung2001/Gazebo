@@ -1,0 +1,71 @@
+# EXPERIMENTAL: mock values are fixtures, never real-aircraft parameters.
+schema_version: 4
+environment: shadow
+source: mock
+model_path: ''
+video_path: ''
+class_id: 0
+confidence: 0.7
+imgsz: 640
+image_topic: /alatus/camera/image
+frame_id: camera_optical
+input_timeout_s: 0.5
+use_sim_time: false
+camera:
+  calibrated: true
+  fx: 500.0
+  fy: 500.0
+  cx: 320.0
+  cy: 240.0
+  resolution:
+  - 640
+  - 480
+  distortion_model: plumb_bob
+  distortion: []
+  optical_to_body_flu:
+  - - 0
+    - 0
+    - 1
+  - - -1
+    - 0
+    - 0
+  - - 0
+    - -1
+    - 0
+  position_body_flu_m:
+  - 0
+  - 0
+  - 0
+lateral_pid:
+  kp: 0.8
+  ki: 0.0
+  kd: 0.1
+  limit: 0.1
+  slew: 0.2
+  derivative_tau: 0.1
+vertical_pid:
+  kp: 0.3
+  ki: 0.0
+  kd: 0.0
+  limit: 0.05
+  slew: 0.1
+  derivative_tau: 0.1
+command_measurement_age_s: 0.1
+min_airspeed_m_s: 8.0
+min_groundspeed_m_s: 1.0
+bank_limit_rad: 0.35
+course_horizon_s: 2.0
+lookahead_m: 40.0
+altitude_floor_enu_m: 5.0
+altitude_ceiling_enu_m: 100.0
+mock_aircraft: true
+allow_mock_commands: false
+filter:
+  q: 25.0
+  r: 9.0
+  gate: 9.21
+  timeout: 0.5
+  max_prediction: 0.15
+  max_variance: 2500.0
+  confirm: 3
+controller_reviewed: false

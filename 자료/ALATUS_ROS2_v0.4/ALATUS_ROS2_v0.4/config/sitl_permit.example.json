@@ -1,0 +1,19 @@
+{
+  "enable": false,
+  "simulation_only": true,
+  "fcu_url": "udp://:14540@127.0.0.1:14557",
+  "px4_commit": "TBD",
+  "mavros_version": "TBD",
+  "interface": "POSITION_LOCAL_ENU",
+  "interface_reviewed": false,
+  "failsafe_reviewed": false,
+  "manual_mode_switch_reviewed": false,
+  "mock_input_reviewed": false,
+  "minimum_airspeed_m_s": null,
+  "minimum_altitude_enu_m": null,
+  "maximum_altitude_enu_m": null,
+  "maximum_bank_rad": null,
+  "maximum_pitch_rad": null,
+  "maximum_target_distance_m": null,
+  "evidence_paths": []
+}

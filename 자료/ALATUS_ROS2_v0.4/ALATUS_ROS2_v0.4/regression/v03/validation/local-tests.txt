@@ -1,0 +1,49 @@
+ALATUS runtime 0.3.0
+Host: Windows / Python 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+Command: python tools/run_local_tests.py
+
+test_definition_field_enum_and_version_mismatch (test_compatibility.CompatibilityTests.test_definition_field_enum_and_version_mismatch) ... ok
+test_explicit_profile_supports_selected_versions (test_compatibility.CompatibilityTests.test_explicit_profile_supports_selected_versions) ... ok
+test_no_automatic_latest_or_unreviewed_profile (test_compatibility.CompatibilityTests.test_no_automatic_latest_or_unreviewed_profile) ... ok
+test_topic_suffix_must_match_profile (test_compatibility.CompatibilityTests.test_topic_suffix_must_match_profile) ... ok
+test_freshness (test_core.CoreTests.test_freshness) ... ok
+test_gate_never_enables (test_core.CoreTests.test_gate_never_enables) ... ok
+test_mission_abort_latch (test_core.CoreTests.test_mission_abort_latch) ... ok
+test_observation_domain (test_core.CoreTests.test_observation_domain) ... ok
+test_proposal_bounds (test_core.CoreTests.test_proposal_bounds) ... ok
+test_tracker_confirmation_and_duplicate (test_core.CoreTests.test_tracker_confirmation_and_duplicate) ... ok
+test_tracker_identity_gap_and_stale (test_core.CoreTests.test_tracker_identity_gap_and_stale) ... ok
+test_consumer_contracts_match_profiles (test_deployment_profiles.DeploymentProfileTests.test_consumer_contracts_match_profiles) ... ok
+test_docker_includes_test_inputs_and_shells (test_deployment_profiles.DeploymentProfileTests.test_docker_includes_test_inputs_and_shells) ... ok
+test_every_profile_valid (test_deployment_profiles.DeploymentProfileTests.test_every_profile_valid) ... ok
+test_onboard_has_no_mock_sources (test_deployment_profiles.DeploymentProfileTests.test_onboard_has_no_mock_sources) ... ok
+test_all_message_fields_documented (test_design_consistency.DesignConsistencyTests.test_all_message_fields_documented) ... ok
+test_declared_parameters_match_registry (test_design_consistency.DesignConsistencyTests.test_declared_parameters_match_registry) ... ok
+test_design_cannot_enable_control (test_design_consistency.DesignConsistencyTests.test_design_cannot_enable_control) ... ok
+test_registry_completeness_and_uniqueness (test_design_consistency.DesignConsistencyTests.test_registry_completeness_and_uniqueness) ... ok
+test_acquire_dropout_recover (test_pipeline.PipelineTests.test_acquire_dropout_recover) ... ok
+test_silent_status_loss_and_clock_rewind (test_pipeline.PipelineTests.test_silent_status_loss_and_clock_rewind) ... ok
+test_onboard_launch_contains_no_mocks (test_runtime_v03.DeploymentTests.test_onboard_launch_contains_no_mocks) ... ok
+test_all_defaults_valid (test_runtime_v03.ParameterTests.test_all_defaults_valid) ... ok
+test_all_numeric_boundaries_and_nonfinite (test_runtime_v03.ParameterTests.test_all_numeric_boundaries_and_nonfinite) ... ok
+test_clock_rewind_and_pause_latch (test_runtime_v03.ParameterTests.test_clock_rewind_and_pause_latch) ... ok
+test_coupled_constraints (test_runtime_v03.ParameterTests.test_coupled_constraints) ... ok
+test_guidance_and_gate_use_parameters (test_runtime_v03.ParameterTests.test_guidance_and_gate_use_parameters) ... ok
+test_rejected_future_does_not_poison_tracker (test_runtime_v03.ParameterTests.test_rejected_future_does_not_poison_tracker) ... ok
+test_string_and_provenance_constraints (test_runtime_v03.ParameterTests.test_string_and_provenance_constraints) ... ok
+test_tracker_uses_parameters (test_runtime_v03.ParameterTests.test_tracker_uses_parameters) ... ok
+test_class_filter_and_deterministic_selection (test_runtime_v03.ProtocolTests.test_class_filter_and_deterministic_selection) ... ok
+test_corrupt_schema_bounds_and_ids (test_runtime_v03.ProtocolTests.test_corrupt_schema_bounds_and_ids) ... ok
+test_invalid_packets_do_not_advance_watermark (test_runtime_v03.ProtocolTests.test_invalid_packets_do_not_advance_watermark) ... ok
+test_no_target_is_explicit_invalid (test_runtime_v03.ProtocolTests.test_no_target_is_explicit_invalid) ... ok
+test_replay_and_new_stream_rejected (test_runtime_v03.ProtocolTests.test_replay_and_new_stream_rejected) ... ok
+test_valid_geometry_and_timestamp (test_runtime_v03.ProtocolTests.test_valid_geometry_and_timestamp) ... ok
+test_entrypoints_exist (test_structure.StructureTests.test_entrypoints_exist) ... ok
+test_package_manifests (test_structure.StructureTests.test_package_manifests) ... ok
+test_publishers_are_diagnostics (test_structure.StructureTests.test_publishers_are_diagnostics) ... ok
+test_python_syntax (test_structure.StructureTests.test_python_syntax) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.107s
+
+OK

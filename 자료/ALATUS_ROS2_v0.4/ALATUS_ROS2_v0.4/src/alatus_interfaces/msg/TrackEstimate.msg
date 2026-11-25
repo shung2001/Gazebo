@@ -1,0 +1,11 @@
+std_msgs/Header header
+builtin_interfaces/Time observation_stamp
+bool valid
+uint32 track_id
+uint32 image_width
+uint32 image_height
+float64[4] state_px
+float64[16] covariance
+float64 prediction_age_s
+string state
+string source

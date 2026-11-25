@@ -1,0 +1,716 @@
+[
+  {
+    "area": "Source",
+    "case": "Python syntax",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "ROS manifest XML",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "Message generation declaration list",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "Legacy message byte preservation",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "Legacy core preservation",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "Launch sender isolation",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "YAML installation copies",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Source",
+    "case": "SDF XML syntax",
+    "status": "PASS",
+    "evidence": "tests/test_contracts.py + compileall",
+    "next_action": "Run ROS build and runtime acceptance separately"
+  },
+  {
+    "area": "Perception",
+    "case": "Invalid detection",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "Empty detection",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "Multiple candidate ambiguity",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "Confidence/class filtering",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "Bounding box boundaries",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "Missing model refusal",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Validate actual trained model/video"
+  },
+  {
+    "area": "Perception",
+    "case": "YOLO11m model load",
+    "status": "BLOCKED",
+    "evidence": "No supplied model/HEF/video and no device",
+    "next_action": "Supply trusted weights, class mapping, footage, SDK and real hardware"
+  },
+  {
+    "area": "Perception",
+    "case": "Video Replay actual inference",
+    "status": "BLOCKED",
+    "evidence": "No supplied model/HEF/video and no device",
+    "next_action": "Supply trusted weights, class mapping, footage, SDK and real hardware"
+  },
+  {
+    "area": "Perception",
+    "case": "Gazebo image inference",
+    "status": "BLOCKED",
+    "evidence": "No supplied model/HEF/video and no device",
+    "next_action": "Supply trusted weights, class mapping, footage, SDK and real hardware"
+  },
+  {
+    "area": "Perception",
+    "case": "Hailo HEF inference",
+    "status": "BLOCKED",
+    "evidence": "No supplied model/HEF/video and no device",
+    "next_action": "Supply trusted weights, class mapping, footage, SDK and real hardware"
+  },
+  {
+    "area": "Tracking",
+    "case": "Constant target",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Moving target",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Noisy detections",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Short dropout prediction",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Long dropout timeout",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Outlier rejection",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Covariance growth",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Variable dt",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Reset/reacquire",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Invalid/duplicate timestamp",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Source change reconfirm",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Analytic F/Q prediction",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Tracking",
+    "case": "Analytic scalar measurement update",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; synthetic inputs only",
+    "next_action": "Measure real imagery RMSE/association"
+  },
+  {
+    "area": "Guidance",
+    "case": "Target left/right/center",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Target above/below",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Invalid bearing/calibration",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Invalid aircraft fields",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Different speed",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Kinematic bank diagnostic limit",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Target lost reset",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Optical/FLU/ENU sign",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Quaternion yaw transform",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "Guidance",
+    "case": "Net ray/plane calculation",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py; pure functions",
+    "next_action": "Verify real frames/calibration and physical response"
+  },
+  {
+    "area": "PID",
+    "case": "Zero/positive/negative error",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Step proportional response",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Derivative filter",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Integral anti-windup",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Slew/magnitude saturation",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Reset/disable",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "NaN/Infinity",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "PID",
+    "case": "Irregular/invalid dt",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py",
+    "next_action": "Tune actual PX4 test model; no flight gains approved"
+  },
+  {
+    "area": "Safety",
+    "case": "Unreviewed permit denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Disconnected/unarmed/invalid field denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Manual mode denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Stale command/state denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Track lost denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Low airspeed denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Safety",
+    "case": "Target altitude denial",
+    "status": "PASS",
+    "evidence": "tests/test_algorithms.py pure permission logic",
+    "next_action": "ROS service and live router/link validation"
+  },
+  {
+    "area": "Regression",
+    "case": "v0.3 existing 40 unit/structure/protocol tests",
+    "status": "PASS",
+    "evidence": "validation/local-tests.txt",
+    "next_action": "Preserve baseline; ROS runtime not covered"
+  },
+  {
+    "area": "MAVROS/PX4 source review",
+    "case": "PositionTarget ROS2 API",
+    "status": "PASS",
+    "evidence": "docs/MAVROS_PX4_INTERFACE_KO.md; external-dependencies.json",
+    "next_action": "Compare installed binary and test response"
+  },
+  {
+    "area": "MAVROS/PX4 source review",
+    "case": "ENU/NED conversion code",
+    "status": "PASS",
+    "evidence": "docs/MAVROS_PX4_INTERFACE_KO.md; external-dependencies.json",
+    "next_action": "Compare installed binary and test response"
+  },
+  {
+    "area": "MAVROS/PX4 source review",
+    "case": "PX4 v1.17 receive path",
+    "status": "PASS",
+    "evidence": "docs/MAVROS_PX4_INTERFACE_KO.md; external-dependencies.json",
+    "next_action": "Compare installed binary and test response"
+  },
+  {
+    "area": "MAVROS/PX4 source review",
+    "case": "FW position consumption",
+    "status": "PASS",
+    "evidence": "docs/MAVROS_PX4_INTERFACE_KO.md; external-dependencies.json",
+    "next_action": "Compare installed binary and test response"
+  },
+  {
+    "area": "MAVROS/PX4 source review",
+    "case": "v1.17 tag and Gazebo gitlink",
+    "status": "PASS",
+    "evidence": "docs/MAVROS_PX4_INTERFACE_KO.md; external-dependencies.json",
+    "next_action": "Compare installed binary and test response"
+  },
+  {
+    "area": "ROS2",
+    "case": "Humble colcon build",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Custom message generation/import",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Launch execution",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Mock ROS integration acceptance",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Replay ROS integration",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Topic/QoS compatibility",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Clock freeze live runtime",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "ROS2",
+    "case": "Duplicate publishers live runtime",
+    "status": "NOT TESTED",
+    "evidence": "No /opt/ros in execution host",
+    "next_action": "bash tools/validate_humble_v04.sh on Ubuntu 22.04 or run GitHub CI"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Connection",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "State receive",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Mode detection",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Position/attitude receive",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Timeout/disconnect/reconnect",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Message type match",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Router parameter confirmation",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "MAVROS runtime",
+    "case": "Serial link",
+    "status": "NOT TESTED",
+    "evidence": "MAVROS not installed",
+    "next_action": "Run separate SITL/serial workflows and record topic types/ages"
+  },
+  {
+    "area": "SITL",
+    "case": "PX4 v1.17 build",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Advanced Plane physics/model load",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Sensor state",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Basic fixed-wing takeoff/flight",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Turn and altitude response",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "MAVROS state",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Shadow integration",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Camera rendering/bridge",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Closed-loop response",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Offboard loss/failsafe",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "SITL",
+    "case": "Manual mode takeover",
+    "status": "NOT TESTED",
+    "evidence": "PX4/Gazebo unavailable in execution host",
+    "next_action": "Follow docs/walkthrough/05 and 06; do not mark PASS before logs"
+  },
+  {
+    "area": "Onboard",
+    "case": "Docker AMD64/ARM64 build",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "Pi Humble runtime",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "Camera Module 3",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "HailoRT/Driver/DFC/Model Zoo compatibility",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "YOLO11m HEF compile and inference",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "MAVROS UART",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "Onboard",
+    "case": "Logging/CPU/RAM/latency",
+    "status": "NOT TESTED",
+    "evidence": "No Pi/Hailo/Camera/Docker runtime",
+    "next_action": "Follow 07 on actual hardware; model dependencies separately BLOCKED"
+  },
+  {
+    "area": "GitHub",
+    "case": "Workflow actual hosted execution",
+    "status": "NOT TESTED",
+    "evidence": "Files prepared, remote not created",
+    "next_action": "User creates private repo and executes workflow"
+  },
+  {
+    "area": "GitHub",
+    "case": "Private repo push",
+    "status": "NOT TESTED",
+    "evidence": "Files prepared, remote not created",
+    "next_action": "User creates private repo and executes workflow"
+  },
+  {
+    "area": "GitHub",
+    "case": "PR/merge",
+    "status": "NOT TESTED",
+    "evidence": "Files prepared, remote not created",
+    "next_action": "User creates private repo and executes workflow"
+  },
+  {
+    "area": "Flight",
+    "case": "Net Capture geometry",
+    "status": "BLOCKED",
+    "evidence": "Mass/aerodynamics/calibration/net survey/gains missing",
+    "next_action": "Separate engineering/ground/flight acceptance; not v0.4 source acceptance"
+  },
+  {
+    "area": "Flight",
+    "case": "ALATUS aerodynamic model",
+    "status": "BLOCKED",
+    "evidence": "Mass/aerodynamics/calibration/net survey/gains missing",
+    "next_action": "Separate engineering/ground/flight acceptance; not v0.4 source acceptance"
+  },
+  {
+    "area": "Flight",
+    "case": "Real flight authority approval",
+    "status": "BLOCKED",
+    "evidence": "Mass/aerodynamics/calibration/net survey/gains missing",
+    "next_action": "Separate engineering/ground/flight acceptance; not v0.4 source acceptance"
+  }
+]

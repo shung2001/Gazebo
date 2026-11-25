@@ -1,0 +1,64 @@
+# Generated from executable SPECS. Startup-only except mock_perception.dropout.
+mock_perception:
+  ros__parameters:
+    use_sim_time: false
+    dropout: false
+    publish_rate_hz: 10.0
+    optical_frame_id: "camera_optical"
+    center_x_norm: 0.5
+    center_y_norm: 0.5
+    amplitude_x_norm: 0.2
+    angular_frequency_rad_s: 0.3
+    confidence: 0.95
+    target_id: 1
+tracker:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    detection_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    confirm_hits: 3
+    max_observation_gap_s: 0.5
+mock_status:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    status_received: true
+    failsafe: false
+    armed: false
+    nav_state: 0
+mission:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    track_max_age_s: 0.5
+    status_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    expected_status_source: "MOCK_NOT_AIRCRAFT"
+guidance:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    track_max_age_s: 0.5
+    status_max_age_s: 0.5
+    mission_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    expected_status_source: "MOCK_NOT_AIRCRAFT"
+    image_center_x: 0.5
+    image_center_y: 0.5
+    diagnostic_gain: 0.5
+    correction_limit_norm: 0.2
+safety_gate:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    observation_max_age_s: 0.5
+    status_max_age_s: 0.5
+    mission_max_age_s: 0.5
+    optical_frame_id: "camera_optical"
+    expected_status_source: "MOCK_NOT_AIRCRAFT"
+    proposal_max_age_s: 0.5
+    correction_limit_norm: 0.2

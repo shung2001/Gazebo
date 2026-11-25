@@ -1,0 +1,23 @@
+services:
+  observer:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.v04
+    image: alatus-observer:0.4.0
+    platform: linux/arm64
+    network_mode: host
+    init: true
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    tmpfs: [/tmp]
+    environment:
+      ROS_DOMAIN_ID: "42"
+      ROS_LOCALHOST_ONLY: "1"
+    volumes:
+      - ./runtime:/run/alatus
+      - ./data:/data
+      - ../config/onboard_shadow.yaml:/etc/alatus/onboard.yaml:ro
+    command: [ros2, launch, alatus_bringup, onboard_shadow.launch.py, "config_path:=/etc/alatus/onboard.yaml"]
+    restart: "no"

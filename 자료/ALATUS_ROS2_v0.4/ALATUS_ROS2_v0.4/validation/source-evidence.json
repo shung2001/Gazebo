@@ -1,0 +1,47 @@
+{
+  "retrieved_date": "2026-11-05",
+  "sources": [
+    {
+      "file": "px4_receiver.cpp",
+      "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.17.0/src/modules/mavlink/mavlink_receiver.cpp",
+      "sha256": "2743c0bd177dde97c78a1c23362a5a93d48d228e5d362e64f0eb7b575568a26b",
+      "runtime_tested": false
+    },
+    {
+      "file": "fw_mode.cpp",
+      "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.17.0/src/modules/fw_mode_manager/FixedWingModeManager.cpp",
+      "sha256": "0484afd1c91e9883276fb76ec00123de324044f39e9beaf34d1d485f9347e22d",
+      "runtime_tested": false
+    },
+    {
+      "file": "advanced_plane_pinned.sdf",
+      "url": "https://raw.githubusercontent.com/PX4/PX4-gazebo-models/b6127f4ec20de867e215fb5f78ae88b80f371909/models/advanced_plane/model.sdf",
+      "sha256": "5f4c10fc1d2cf2706a6f2061d15deafda35fa3b27cdcf988b331b54ff0b2db50",
+      "runtime_tested": false
+    },
+    {
+      "file": "mavros_raw.cpp",
+      "url": "https://raw.githubusercontent.com/mavlink/mavros/ros2/mavros/src/plugins/setpoint_raw.cpp",
+      "sha256": "32697916f2f105d71598e66585564d7d591df71cb45e5fe8f61eb9be66c57751",
+      "runtime_tested": false
+    },
+    {
+      "file": "VfrHud.msg",
+      "url": "https://raw.githubusercontent.com/mavlink/mavros/ros2/mavros_msgs/msg/VfrHud.msg",
+      "sha256": "af56a37481311570b105a7a14ebcca88c587166c0864758b4bc5a959f0d4f704",
+      "runtime_tested": false
+    },
+    {
+      "file": "vfr_hud.cpp",
+      "url": "https://raw.githubusercontent.com/mavlink/mavros/ros2/mavros_extras/src/plugins/vfr_hud.cpp",
+      "sha256": "83319e57d8a25045c42b38d6fb22dce7ea4d305366c3ec37e537afc74684a488",
+      "runtime_tested": false
+    },
+    {
+      "file": "gz_simulation.sh",
+      "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.17.0/ROMFS/px4fmu_common/init.d-posix/px4-rc.gzsim",
+      "sha256": "dba9b8e3bfd4a5e7fef6cdb6ba7d6a23d593884886b6b91d132568f0ea4038eb",
+      "runtime_tested": false
+    }
+  ]
+}

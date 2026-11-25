@@ -1,0 +1,4 @@
+# Reconcile with supplied model and freeze resolved versions after validation.
+numpy>=1.21,<2
+opencv-python>=4.6,<4.12
+ultralytics>=8.3,<9

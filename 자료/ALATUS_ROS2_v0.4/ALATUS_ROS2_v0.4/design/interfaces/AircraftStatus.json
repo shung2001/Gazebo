@@ -1,0 +1,49 @@
+{
+  "message": "AircraftStatus",
+  "fields": [
+    {
+      "name": "header",
+      "type": "std_msgs/Header"
+    },
+    {
+      "name": "px4_timestamp_us",
+      "type": "uint64"
+    },
+    {
+      "name": "status_received",
+      "type": "bool"
+    },
+    {
+      "name": "armed",
+      "type": "bool"
+    },
+    {
+      "name": "failsafe",
+      "type": "bool"
+    },
+    {
+      "name": "nav_state",
+      "type": "uint8"
+    },
+    {
+      "name": "flight_ready_known",
+      "type": "bool"
+    },
+    {
+      "name": "flight_ready",
+      "type": "bool"
+    },
+    {
+      "name": "manual_override_known",
+      "type": "bool"
+    },
+    {
+      "name": "manual_override_active",
+      "type": "bool"
+    },
+    {
+      "name": "source",
+      "type": "string"
+    }
+  ]
+}

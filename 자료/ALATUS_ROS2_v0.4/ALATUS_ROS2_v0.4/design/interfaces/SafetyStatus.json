@@ -1,0 +1,21 @@
+{
+  "message": "SafetyStatus",
+  "fields": [
+    {
+      "name": "header",
+      "type": "std_msgs/Header"
+    },
+    {
+      "name": "inputs_valid",
+      "type": "bool"
+    },
+    {
+      "name": "control_allowed",
+      "type": "bool"
+    },
+    {
+      "name": "reason",
+      "type": "string"
+    }
+  ]
+}

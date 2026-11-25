@@ -1,0 +1,37 @@
+{
+  "message": "GuidanceProposal",
+  "fields": [
+    {
+      "name": "header",
+      "type": "std_msgs/Header"
+    },
+    {
+      "name": "observation_stamp",
+      "type": "builtin_interfaces/Time"
+    },
+    {
+      "name": "valid",
+      "type": "bool"
+    },
+    {
+      "name": "shadow_only",
+      "type": "bool"
+    },
+    {
+      "name": "image_error_x",
+      "type": "float32"
+    },
+    {
+      "name": "image_error_y",
+      "type": "float32"
+    },
+    {
+      "name": "correction_norm",
+      "type": "float32"
+    },
+    {
+      "name": "reason",
+      "type": "string"
+    }
+  ]
+}

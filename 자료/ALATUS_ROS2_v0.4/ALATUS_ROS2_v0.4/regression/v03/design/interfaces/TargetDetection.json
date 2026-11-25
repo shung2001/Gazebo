@@ -1,0 +1,29 @@
+{
+  "message": "TargetDetection",
+  "fields": [
+    {
+      "name": "header",
+      "type": "std_msgs/Header"
+    },
+    {
+      "name": "valid",
+      "type": "bool"
+    },
+    {
+      "name": "confidence",
+      "type": "float32"
+    },
+    {
+      "name": "center_x_norm",
+      "type": "float32"
+    },
+    {
+      "name": "center_y_norm",
+      "type": "float32"
+    },
+    {
+      "name": "target_id",
+      "type": "uint32"
+    }
+  ]
+}

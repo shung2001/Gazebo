@@ -1,0 +1,23 @@
+name: humble-source-and-runtime
+on: [push, pull_request]
+jobs:
+  humble:
+    runs-on: ubuntu-22.04
+    container: ros:humble-ros-base-jammy
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y python3-colcon-common-extensions python3-rosdep python3-pytest python3-numpy python3-yaml ros-humble-mavros ros-humble-mavros-extras ros-humble-cv-bridge ros-humble-launch-ros ros-humble-std-srvs ros-humble-rosidl-default-generators
+          rosdep update
+          rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+      - name: Build, regression and ROS acceptance
+        shell: bash
+        run: bash tools/validate_humble_v04.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: humble-logs
+          path: log/

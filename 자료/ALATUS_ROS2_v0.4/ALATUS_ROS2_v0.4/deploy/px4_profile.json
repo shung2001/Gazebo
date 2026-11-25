@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "reviewed": false,
+  "message_type": "px4_msgs/msg/VehicleStatus",
+  "firmware_tag": "v1.17.0",
+  "px4_msgs_ref": "release/1.17",
+  "firmware_commit_sha": "",
+  "px4_msgs_commit_sha": "",
+  "expected_message_version": 1,
+  "required_fields": {
+    "timestamp": "uint64",
+    "arming_state": "uint8",
+    "failsafe": "boolean",
+    "nav_state": "uint8"
+  },
+  "armed_constant": 2,
+  "vehicle_status_msg_sha256": "",
+  "review_notes": "UNREVIEWED template; no PX4 runtime/hardware test performed. Pin commits and installed message definition before enabling."
+}

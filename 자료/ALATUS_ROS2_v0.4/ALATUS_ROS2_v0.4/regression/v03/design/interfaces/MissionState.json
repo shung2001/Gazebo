@@ -1,0 +1,21 @@
+{
+  "message": "MissionState",
+  "fields": [
+    {
+      "name": "header",
+      "type": "std_msgs/Header"
+    },
+    {
+      "name": "state",
+      "type": "string"
+    },
+    {
+      "name": "proposal_allowed",
+      "type": "bool"
+    },
+    {
+      "name": "reason",
+      "type": "string"
+    }
+  ]
+}

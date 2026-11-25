@@ -1,0 +1,53 @@
+services:
+  observer:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+      args:
+        PX4_MSGS_SHA: ${PX4_MSGS_SHA:-}
+    image: alatus-observer:0.3.0
+    # Raspberry Pi is expected to run a 64-bit Linux host.
+    platform: linux/arm64
+    network_mode: host
+    init: true
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    mem_limit: 1g
+    cpus: 2.0
+    stop_grace_period: 15s
+    restart: "no"
+    environment:
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-0}
+      ROS_LOCALHOST_ONLY: "1"
+    volumes:
+      - type: bind
+        source: ./runtime
+        target: /run/alatus
+      - type: bind
+        source: ./data
+        target: /data
+      - type: bind
+        source: ./onboard.yaml
+        target: /etc/alatus/onboard.yaml
+        read_only: true
+      - type: bind
+        source: ./px4_profile.json
+        target: /etc/alatus/px4-profile.json
+        read_only: true
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=64m
+    command: ["ros2", "launch", "alatus_bringup", "onboard_observer.launch.py", "config:=/etc/alatus/onboard.yaml", "enable_px4_status:=${ENABLE_PX4_STATUS:-false}"]
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/alatus-entrypoint", "python3", "/opt/alatus/tools/observer_health.py"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

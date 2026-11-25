@@ -14,6 +14,22 @@ wsl -d Ubuntu-22.04 -- bash /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/run
 
 기본 모델은 프로젝트 루트의 `YOLO11m_best.pt`입니다. 체크포인트를 직접 검사한 결과 분할 작업이며 클래스는 `{0: 'target board'}` 하나입니다. 다른 모델을 쓰려면 `--model /path/to/best.pt`를 지정할 수 있습니다. 선택한 모델에 `target board` 클래스가 없으면 실행을 중단합니다.
 
+YOLO11s 1280px 체크포인트를 같은 월드·카메라 crop·기체 경로에서 비교하려면 프로젝트 루트의 PowerShell에서 다음을 실행합니다. 현재 WSL 가상환경의 protobuf와 Gazebo Python 바인딩이 충돌할 수 있어 실행 프로세스에만 호환 모드를 적용합니다.
+
+화면에 탐지 박스를 표시하려면:
+
+```powershell
+wsl.exe -d Ubuntu-22.04 -- env PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python bash /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/run_target_detection.sh --model /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/hef_11s/best_11s.pt --duration 180
+```
+
+화면 없이 CSV만 기록하려면:
+
+```powershell
+wsl.exe -d Ubuntu-22.04 -- env PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python bash /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/run_target_detection.sh --headless --model /mnt/c/Users/c/Desktop/대학생활/we_meet_ROS2/hef_11s/best_11s.pt --duration 180
+```
+
+이 명령은 `.pt`의 **Gazebo 영상 탐지 성능**을 측정합니다. Hailo 장치에서 HEF를 실행하는 시험은 아닙니다. 또한 현재 기체 접근 경로는 알려진 과녁 월드 좌표로 제어하고 YOLO 탐지 결과는 기록·표시에 사용합니다. 따라서 첫 탐지 거리와 탐지율은 비교할 수 있지만 영상 기반 폐루프 유도의 성공률은 측정하지 않습니다.
+
 ## 실험 조건
 
 - 과녁: 기존 인하대 항공우주융합캠퍼스 건물 벽의 2×2m 패널. 중심 좌표는 `(-65.380811, -5.656304, 8)`m.

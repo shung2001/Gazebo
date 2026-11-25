@@ -1,0 +1,65 @@
+# Generated from executable SPECS. Startup-only except mock_perception.dropout.
+perception_socket:
+  ros__parameters:
+    use_sim_time: false
+    socket_path: "/run/alatus/perception.sock"
+    optical_frame_id: "camera_optical"
+    target_class_id: "target"
+    min_confidence: 0.7
+    max_input_age_s: 0.5
+    publish_rate_hz: 50.0
+    max_datagrams_per_tick: 16
+tracker:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    detection_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    confirm_hits: 3
+    max_observation_gap_s: 0.5
+mission:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    track_max_age_s: 0.5
+    status_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    expected_status_source: "PX4_VEHICLE_STATUS_ONLY"
+guidance:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    track_max_age_s: 0.5
+    status_max_age_s: 0.5
+    mission_max_age_s: 0.5
+    min_confidence: 0.7
+    optical_frame_id: "camera_optical"
+    expected_status_source: "PX4_VEHICLE_STATUS_ONLY"
+    image_center_x: 0.5
+    image_center_y: 0.5
+    diagnostic_gain: 0.5
+    correction_limit_norm: 0.2
+safety_gate:
+  ros__parameters:
+    use_sim_time: false
+    publish_rate_hz: 10.0
+    observation_max_age_s: 0.5
+    status_max_age_s: 0.5
+    mission_max_age_s: 0.5
+    optical_frame_id: "camera_optical"
+    expected_status_source: "PX4_VEHICLE_STATUS_ONLY"
+    proposal_max_age_s: 0.5
+    correction_limit_norm: 0.2
+px4_status:
+  ros__parameters:
+    use_sim_time: false
+    firmware_tag: ""
+    px4_msgs_ref: ""
+    contract_reviewed: false
+    status_topic: "/fmu/out/vehicle_status_v1"
+    expected_message_version: 1
+    firmware_commit_sha: ""
+    px4_msgs_commit_sha: ""
+    contract_profile_path: "/etc/alatus/px4-profile.json"

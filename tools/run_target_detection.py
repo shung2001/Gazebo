@@ -363,7 +363,7 @@ def main():
                 from PIL import ImageTk
                 print('Opening target detection preview window...', flush=True)
                 window = tk.Tk()
-                window.title('VTOL YOLO11m target detection')
+                window.title(f'VTOL {model.name} target detection')
                 photo_label = ttk.Label(window)
                 photo_label.pack()
                 status = tk.StringVar(value='Waiting for 3200 x 3200 camera frames...')
